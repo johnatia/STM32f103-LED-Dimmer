@@ -11,6 +11,7 @@ C_SRCS += \
 ../src/stm32f103c8t6_gpio.c \
 ../src/stm32f103c8t6_nvic.c \
 ../src/stm32f103c8t6_rcc.c \
+../src/stm32f103c8t6_spi.c \
 ../src/stm32f103c8t6_timer.c \
 ../src/stm32f103c8t6_usart.c 
 
@@ -22,6 +23,7 @@ OBJS += \
 ./src/stm32f103c8t6_gpio.o \
 ./src/stm32f103c8t6_nvic.o \
 ./src/stm32f103c8t6_rcc.o \
+./src/stm32f103c8t6_spi.o \
 ./src/stm32f103c8t6_timer.o \
 ./src/stm32f103c8t6_usart.o 
 
@@ -33,6 +35,7 @@ C_DEPS += \
 ./src/stm32f103c8t6_gpio.d \
 ./src/stm32f103c8t6_nvic.d \
 ./src/stm32f103c8t6_rcc.d \
+./src/stm32f103c8t6_spi.d \
 ./src/stm32f103c8t6_timer.d \
 ./src/stm32f103c8t6_usart.d 
 

@@ -1377,6 +1377,7 @@ Discarded input sections
  .group         0x00000000        0xc ./src/main.o
  .group         0x00000000        0xc ./src/main.o
  .group         0x00000000        0xc ./src/main.o
+ .group         0x00000000        0xc ./src/main.o
  .text          0x00000000        0x0 ./src/main.o
  .data          0x00000000        0x0 ./src/main.o
  .bss           0x00000000        0x0 ./src/main.o
@@ -1463,6 +1464,35 @@ Discarded input sections
  .debug_macro   0x00000000      0xa6c ./src/stm32f103c8t6_rcc.o
  .debug_macro   0x00000000       0x28 ./src/stm32f103c8t6_rcc.o
  .debug_macro   0x00000000       0x8e ./src/stm32f103c8t6_rcc.o
+ .group         0x00000000        0xc ./src/stm32f103c8t6_spi.o
+ .group         0x00000000        0xc ./src/stm32f103c8t6_spi.o
+ .group         0x00000000        0xc ./src/stm32f103c8t6_spi.o
+ .group         0x00000000        0xc ./src/stm32f103c8t6_spi.o
+ .text          0x00000000        0x0 ./src/stm32f103c8t6_spi.o
+ .data          0x00000000        0x0 ./src/stm32f103c8t6_spi.o
+ .bss           0x00000000        0x0 ./src/stm32f103c8t6_spi.o
+ .text.SPI_voidInit
+                0x00000000       0x70 ./src/stm32f103c8t6_spi.o
+ .text.SPI_u8SendReceiveSynch
+                0x00000000       0x28 ./src/stm32f103c8t6_spi.o
+ .data.SPI      0x00000000        0xc ./src/stm32f103c8t6_spi.o
+ .debug_info    0x00000000      0x1bd ./src/stm32f103c8t6_spi.o
+ .debug_abbrev  0x00000000      0x106 ./src/stm32f103c8t6_spi.o
+ .debug_loc     0x00000000       0x21 ./src/stm32f103c8t6_spi.o
+ .debug_aranges
+                0x00000000       0x28 ./src/stm32f103c8t6_spi.o
+ .debug_ranges  0x00000000       0x18 ./src/stm32f103c8t6_spi.o
+ .debug_macro   0x00000000       0x36 ./src/stm32f103c8t6_spi.o
+ .debug_macro   0x00000000      0xa6c ./src/stm32f103c8t6_spi.o
+ .debug_macro   0x00000000       0x28 ./src/stm32f103c8t6_spi.o
+ .debug_macro   0x00000000       0x2e ./src/stm32f103c8t6_spi.o
+ .debug_macro   0x00000000       0xcc ./src/stm32f103c8t6_spi.o
+ .debug_line    0x00000000       0xc3 ./src/stm32f103c8t6_spi.o
+ .debug_str     0x00000000     0x3326 ./src/stm32f103c8t6_spi.o
+ .comment       0x00000000       0x7f ./src/stm32f103c8t6_spi.o
+ .debug_frame   0x00000000       0x3c ./src/stm32f103c8t6_spi.o
+ .ARM.attributes
+                0x00000000       0x33 ./src/stm32f103c8t6_spi.o
  .group         0x00000000        0xc ./src/stm32f103c8t6_timer.o
  .group         0x00000000        0xc ./src/stm32f103c8t6_timer.o
  .group         0x00000000        0xc ./src/stm32f103c8t6_timer.o
@@ -1658,6 +1688,7 @@ LOAD ./src/stm32f103c8t6_exti.o
 LOAD ./src/stm32f103c8t6_gpio.o
 LOAD ./src/stm32f103c8t6_nvic.o
 LOAD ./src/stm32f103c8t6_rcc.o
+LOAD ./src/stm32f103c8t6_spi.o
 LOAD ./src/stm32f103c8t6_timer.o
 LOAD ./src/stm32f103c8t6_usart.o
 LOAD d:/engazat/embeddedsystem/currently/imt/imt_arm_diploma/imt_arm_course/02- tools/03- imt sdk/imt_sdk_win_64/winarm/armgcc/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7-m\libstdc++_nano.a
@@ -2345,7 +2376,7 @@ END GROUP
  .debug_abbrev  0x00001805       0x70 ./src/stm32f103c8t6_rcc.o
  .debug_abbrev  0x00001875      0x186 ./src/stm32f103c8t6_timer.o
 
-.debug_line     0x00000000     0x3856
+.debug_line     0x00000000     0x386d
  *(.debug_line)
  .debug_line    0x00000000      0x45f ./system/src/newlib/_exit.o
  .debug_line    0x0000045f      0x413 ./system/src/newlib/_sbrk.o
@@ -2357,14 +2388,14 @@ END GROUP
  .debug_line    0x00002287      0x80a ./system/src/cortexm/exception_handlers.o
  .debug_line    0x00002a91      0x42b ./system/src/cmsis/system_stm32f10x.o
  .debug_line    0x00002ebc      0x144 ./system/src/cmsis/vectors_stm32f10x.o
- .debug_line    0x00003000      0x18e ./src/main.o
- .debug_line    0x0000318e       0x9f ./src/stm23f103c8t6_dma.o
- .debug_line    0x0000322d       0xa2 ./src/stm32f103c8t6_afio.o
- .debug_line    0x000032cf       0xfe ./src/stm32f103c8t6_exti.o
- .debug_line    0x000033cd       0xbc ./src/stm32f103c8t6_gpio.o
- .debug_line    0x00003489      0x102 ./src/stm32f103c8t6_nvic.o
- .debug_line    0x0000358b       0xbf ./src/stm32f103c8t6_rcc.o
- .debug_line    0x0000364a      0x20c ./src/stm32f103c8t6_timer.o
+ .debug_line    0x00003000      0x1a5 ./src/main.o
+ .debug_line    0x000031a5       0x9f ./src/stm23f103c8t6_dma.o
+ .debug_line    0x00003244       0xa2 ./src/stm32f103c8t6_afio.o
+ .debug_line    0x000032e6       0xfe ./src/stm32f103c8t6_exti.o
+ .debug_line    0x000033e4       0xbc ./src/stm32f103c8t6_gpio.o
+ .debug_line    0x000034a0      0x102 ./src/stm32f103c8t6_nvic.o
+ .debug_line    0x000035a2       0xbf ./src/stm32f103c8t6_rcc.o
+ .debug_line    0x00003661      0x20c ./src/stm32f103c8t6_timer.o
 
 .debug_frame    0x00000000      0xafc
  *(.debug_frame)
@@ -2400,7 +2431,7 @@ END GROUP
  .debug_frame   0x00000aac       0x30 d:/engazat/embeddedsystem/currently/imt/imt_arm_diploma/imt_arm_course/02- tools/03- imt sdk/imt_sdk_win_64/winarm/armgcc/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7-m\libg_nano.a(lib_a-mlock.o)
  .debug_frame   0x00000adc       0x20 d:/engazat/embeddedsystem/currently/imt/imt_arm_diploma/imt_arm_course/02- tools/03- imt sdk/imt_sdk_win_64/winarm/armgcc/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7-m\libg_nano.a(lib_a-nano-msizer.o)
 
-.debug_str      0x00000000    0x571cd
+.debug_str      0x00000000    0x57489
  *(.debug_str)
  .debug_str     0x00000000     0x7d2d ./system/src/newlib/_exit.o
                                0x7f00 (size before relaxing)
@@ -2422,21 +2453,21 @@ END GROUP
                               0x4e8e9 (size before relaxing)
  .debug_str     0x00055ac7       0x57 ./system/src/cmsis/vectors_stm32f10x.o
                                0x388e (size before relaxing)
- .debug_str     0x00055b1e      0xf11 ./src/main.o
-                               0x3ce7 (size before relaxing)
- .debug_str     0x00056a2f       0xc5 ./src/stm23f103c8t6_dma.o
+ .debug_str     0x00055b1e     0x11cd ./src/main.o
+                               0x3fa3 (size before relaxing)
+ .debug_str     0x00056ceb       0xc5 ./src/stm23f103c8t6_dma.o
                                0x302e (size before relaxing)
- .debug_str     0x00056af4       0x95 ./src/stm32f103c8t6_afio.o
+ .debug_str     0x00056db0       0x95 ./src/stm32f103c8t6_afio.o
                                0x3021 (size before relaxing)
- .debug_str     0x00056b89      0x1f9 ./src/stm32f103c8t6_exti.o
-                               0x3102 (size before relaxing)
- .debug_str     0x00056d82       0xa9 ./src/stm32f103c8t6_gpio.o
+ .debug_str     0x00056e45      0x1f9 ./src/stm32f103c8t6_exti.o
+                               0x30f8 (size before relaxing)
+ .debug_str     0x0005703e       0xa9 ./src/stm32f103c8t6_gpio.o
                                0x316f (size before relaxing)
- .debug_str     0x00056e2b      0x10d ./src/stm32f103c8t6_nvic.o
-                               0x34a8 (size before relaxing)
- .debug_str     0x00056f38       0x3d ./src/stm32f103c8t6_rcc.o
+ .debug_str     0x000570e7      0x10d ./src/stm32f103c8t6_nvic.o
+                               0x349e (size before relaxing)
+ .debug_str     0x000571f4       0x3d ./src/stm32f103c8t6_rcc.o
                                0x31a3 (size before relaxing)
- .debug_str     0x00056f75      0x258 ./src/stm32f103c8t6_timer.o
+ .debug_str     0x00057231      0x258 ./src/stm32f103c8t6_timer.o
                                0x3427 (size before relaxing)
 
 .debug_loc      0x00000000     0x13a0
@@ -2493,7 +2524,7 @@ OUTPUT(LED_Dimmer.elf elf32-littlearm)
  .debug_ranges  0x000002e8       0x20 ./src/stm32f103c8t6_rcc.o
  .debug_ranges  0x00000308       0x78 ./src/stm32f103c8t6_timer.o
 
-.debug_macro    0x00000000     0x29f3
+.debug_macro    0x00000000     0x2ac8
  .debug_macro   0x00000000      0x1b4 ./system/src/newlib/_exit.o
  .debug_macro   0x000001b4       0x9c ./system/src/newlib/_exit.o
  .debug_macro   0x00000250      0x10e ./system/src/newlib/_exit.o
@@ -2538,20 +2569,21 @@ OUTPUT(LED_Dimmer.elf elf32-littlearm)
  .debug_macro   0x00002451       0x10 ./system/src/cortexm/exception_handlers.o
  .debug_macro   0x00002461      0x16e ./system/src/cmsis/system_stm32f10x.o
  .debug_macro   0x000025cf       0x34 ./system/src/cmsis/vectors_stm32f10x.o
- .debug_macro   0x00002603       0x6c ./src/main.o
- .debug_macro   0x0000266f       0x28 ./src/main.o
- .debug_macro   0x00002697       0x8e ./src/main.o
- .debug_macro   0x00002725       0xa0 ./src/main.o
- .debug_macro   0x000027c5       0x2e ./src/main.o
- .debug_macro   0x000027f3       0x22 ./src/main.o
- .debug_macro   0x00002815       0x10 ./src/main.o
- .debug_macro   0x00002825       0x22 ./src/main.o
- .debug_macro   0x00002847       0x46 ./src/main.o
- .debug_macro   0x0000288d       0x22 ./src/main.o
- .debug_macro   0x000028af       0x2d ./src/stm23f103c8t6_dma.o
- .debug_macro   0x000028dc       0x2d ./src/stm32f103c8t6_afio.o
- .debug_macro   0x00002909       0x2d ./src/stm32f103c8t6_exti.o
- .debug_macro   0x00002936       0x2d ./src/stm32f103c8t6_gpio.o
- .debug_macro   0x00002963       0x2d ./src/stm32f103c8t6_nvic.o
- .debug_macro   0x00002990       0x2d ./src/stm32f103c8t6_rcc.o
- .debug_macro   0x000029bd       0x36 ./src/stm32f103c8t6_timer.o
+ .debug_macro   0x00002603       0x75 ./src/main.o
+ .debug_macro   0x00002678       0x28 ./src/main.o
+ .debug_macro   0x000026a0       0x8e ./src/main.o
+ .debug_macro   0x0000272e       0xa0 ./src/main.o
+ .debug_macro   0x000027ce       0x2e ./src/main.o
+ .debug_macro   0x000027fc       0x22 ./src/main.o
+ .debug_macro   0x0000281e       0x10 ./src/main.o
+ .debug_macro   0x0000282e       0x22 ./src/main.o
+ .debug_macro   0x00002850       0x46 ./src/main.o
+ .debug_macro   0x00002896       0x22 ./src/main.o
+ .debug_macro   0x000028b8       0xcc ./src/main.o
+ .debug_macro   0x00002984       0x2d ./src/stm23f103c8t6_dma.o
+ .debug_macro   0x000029b1       0x2d ./src/stm32f103c8t6_afio.o
+ .debug_macro   0x000029de       0x2d ./src/stm32f103c8t6_exti.o
+ .debug_macro   0x00002a0b       0x2d ./src/stm32f103c8t6_gpio.o
+ .debug_macro   0x00002a38       0x2d ./src/stm32f103c8t6_nvic.o
+ .debug_macro   0x00002a65       0x2d ./src/stm32f103c8t6_rcc.o
+ .debug_macro   0x00002a92       0x36 ./src/stm32f103c8t6_timer.o

@@ -1,6 +1,6 @@
 /**
  * @Author					:			John Atia Nafady
- * @Date					: 			20-5-2021
+ * @Date					: 			20-4-2021
  * @Version					:			V02
  */
 
@@ -15,7 +15,7 @@
 #include "stm23f103c8t6_dma.h"
 #include "stm32f103c8t6_timer.h"
 #include "stm32f103c8t6_usart.h"
-
+#include "stm32f103c8t6_spi.h"
 
 
 volatile s16 x =0;

@@ -3,8 +3,8 @@
  * @Date					: 			20-5-2021
  * @Version					:			V02
  */
-#ifndef _EXTI_INTERFACE_H_
-#define _EXTI_INTERFACE_H_
+#ifndef _EXTI_H_
+#define _EXTI_H_
 
 typedef struct{
 

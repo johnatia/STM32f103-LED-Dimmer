@@ -6,8 +6,8 @@
 /*																						*/
 /****************************************************************************************/
 
-#ifndef _NVIC_INTERFACE_H_
-#define _NVIC_INTERFACE_H_
+#ifndef _NVIC_H_
+#define _NVIC_H_
 
 
 
